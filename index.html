@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Just a Search Bar</title>
+	<style>
+		body{
+			font-family: sans-serif;
+		}
+		.search{
+			font-size: 60px;
+			font-weight: bold;
+		}
+		.button{
+			font-size: 60px;
+			font-weight: bold;
+			cursor: pointer;
+		}
+		.head{
+			font-size: 40px;
+		}
+		.tell{
+			color: red;
+		}
+		.first{
+			color: red;
+		}
+		.second{
+			color: green;
+		}
+		.third{
+			color: darkblue;
+		}
+		.fourth{
+			color: darkgreen;
+		}
+	</style>
+	<script>
+		function startSearch(){
+			let search = document.getElementById("search").value;
+
+			if(search == "cat"){
+				window.open("cat.html")
+			}else if(search == "dog"){
+				window.open("dog.html")
+			}else if(search == "frog"){
+				window.open("frog.html")
+			}else if(search == "crow"){
+				window.open("crow.html")
+			}else if(search == "tank"){
+				window.open("tank.html")
+			}else if(search == "camera"){
+				window.open("camera.html")
+			}else if(search == "pencil"){
+				window.open("pencil.html")
+			}else if(search == "laptop"){
+				window.open("laptop.html")
+			}else if(search == "mouse"){
+				window.open("mouse.html")
+			}else if(search == "cd"){
+				window.open("cd.html")
+			}else if(search == "dvd"){
+				window.open("dvd.html")
+			}else if(search == "trashcan"){
+				window.open("trashcan.html")
+			}else if(search == "dustbin"){
+				window.open("trashcan.html")
+			}else if(search == "trash can"){
+				window.open("trashcan.html")
+			}else if(search == "dust bin"){
+				window.open("trashcan.html")
+			}else if(search == "astronaut"){
+				window.open("astro.html")
+			}else if(search == ""){
+				alert("You did'nt even typed anything to search")
+			}else{
+				alert("There is no search from " + search + " There will be more things in next update")
+			}
+		}
+	</script>
+</head>
+<body>
+	<br>
+	<br>
+	<center>
+		<i class="tell">*please write in lowercase</i>
+	</center>
+	<br>
+	<center>
+		<h1 class="head">Search Anything!</h1>
+	</center>
+	<br>
+	<br>
+	<center>
+		<input type="text" placeholder="Search here" id="search" class="search">
+	</center>
+	<br>
+	<Br>
+	<BR>
+<Center>
+	<input type="submit" onclick="startSearch()" value="Submit" class="button">
+</Center>
+<br>
+<br>
+<br>
+<center>
+	<a href="about.html" class="first">About this website</a>
+	<a href="developer.html" class="second">Developers</a>
+	<a href="word.html" class="third">search world list</a>
+	<a href="update.html" class="fourth">Updates</a>
+</center>
+</body>
+</html>
